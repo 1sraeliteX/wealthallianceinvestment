@@ -1,0 +1,59 @@
+.navbar-brand.logo {
+    margin-top: 10px !important;
+}
+
+/* Ensure proper logo visibility states */
+.navbar-brand .first {
+    display: none;
+}
+
+.navbar-brand .last {
+    display: block;
+}
+
+/* Extend navbar to 250px total height */
+.header {
+    min-height: 80px !important;
+}
+
+.header:not(.sticky_header) {
+    min-height: 80px !important;
+}
+
+.header .nav-item .nav-link {
+    padding: 8.5rem 0 !important;
+    color: #000000 !important;
+}
+
+.header:not(.sticky_header) .nav-item .nav-link {
+    padding: 8.5rem 0 !important;
+    color: #000000 !important;
+}
+
+/* Navigation buttons text color */
+.nav-log a {
+    color: #000000 !important;
+}
+
+.nav-reg a {
+    color: #000000 !important;
+}
+
+/* Logo color management for desktop */
+@media (min-width: 992px) {
+    .header:not(.sticky_header) .navbar-brand .first {
+        display: none !important;
+    }
+    
+    .header:not(.sticky_header) .navbar-brand .last {
+        display: block !important;
+    }
+    
+    .header.sticky_header .navbar-brand .first {
+        display: none !important;
+    }
+    
+    .header.sticky_header .navbar-brand .last {
+        display: block !important;
+    }
+}
